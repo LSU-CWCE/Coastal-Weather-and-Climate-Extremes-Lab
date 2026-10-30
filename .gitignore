@@ -1,0 +1,15 @@
+# Logo drafts: kept out of the public repository until LSU approves a final mark
+assets/logo/
+
+# Content waiting for Dr. Liang's confirmation (e.g. the Current projects section)
+drafts/
+
+# Local tools
+.claude/
+__pycache__/
+*.pyc
+
+# Operating system clutter
+.DS_Store
+Thumbs.db
+desktop.ini

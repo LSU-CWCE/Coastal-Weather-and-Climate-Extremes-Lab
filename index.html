@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coastal Weather and Climate Extremes Lab · LSU</title>
+  <meta name="description" content="The Coastal Weather and Climate Extremes Lab at Louisiana State University studies heavy rainfall, hurricanes, and other extreme weather, and how they respond to a changing climate.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Coastal Weather and Climate Extremes Lab">
+  <meta property="og:title" content="Coastal Weather and Climate Extremes Lab">
+  <meta property="og:description" content="The Coastal Weather and Climate Extremes Lab at Louisiana State University studies heavy rainfall, hurricanes, and other extreme weather, and how they respond to a changing climate.">
+  <!-- After deploying, make this a full URL, e.g. https://USER.github.io/REPO/assets/img/share.png -->
+  <meta property="og:image" content="assets/img/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1117">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261027j">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Coastal Weather and Climate Extremes Lab</span>
+        <span class="brand-sub">Louisiana State University</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="chart-layer" data-chart="surface" data-view="hero" data-theme="night" data-flow aria-hidden="true"></canvas>
+      <div class="hero-inner wrap">
+        <p class="hero-affil">Department of Oceanography &amp; Coastal Sciences, Louisiana State University</p>
+        <h1 id="hero-title">Coastal Weather and Climate <em>Extremes</em> Lab</h1>
+        <p class="lede">We study heavy rainfall, hurricanes, and other extreme weather, and how the atmospheric circulation, the ocean, and a warming climate shape them, with a particular interest in coastal regions such as the U.S. Gulf Coast.</p>
+        <div class="cta-row">
+          <a class="btn btn-light" href="research.html">Our research <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          <a class="btn btn-ghost" href="publications.html">Publications</a>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div class="wrap">
+          <div class="meta-item"><span class="meta-label">Principal investigator</span>Dr. Wengui Liang</div>
+          <div class="meta-item"><span class="meta-label">Based in</span>Baton Rouge, Louisiana</div>
+          <div class="meta-item">
+            <span class="meta-label">Chart key (illustrative weather, not observed)</span>
+            <ul class="hero-legend">
+              <li><svg viewBox="0 0 26 11" aria-hidden="true"><path d="M1 7.5c6-4.5 12-4.5 24-1" fill="none" stroke="#c9cbc6" stroke-width="1"/></svg>Isobars, 4 hPa</li>
+              <li><svg viewBox="0 0 26 11" aria-hidden="true"><path d="M1 5.5h24" stroke="#c9cbc6" stroke-width="1.4"/><path d="M3.5 5.5l3 4 3-4z" fill="#c9cbc6"/><path d="M15.5 5.5a3.2 3.2 0 0 1 6.4 0z" fill="#c9cbc6"/></svg>Stationary front</li>
+              <li><svg viewBox="0 0 26 11" aria-hidden="true"><rect x=".5" y=".5" width="25" height="10" fill="none" stroke="rgba(231,232,228,.45)"/><path d="M0 11 11 0M5 11 16 0M10 11 21 0M15 11 26 0M20 11 31 0" stroke="rgba(231,232,228,.4)" stroke-width=".7"/></svg>Rain</li>
+              <li><svg viewBox="0 0 26 11" aria-hidden="true"><rect x=".5" y=".5" width="25" height="10" fill="rgba(201,160,135,.18)" stroke="#c9a087"/><path d="M0 6 6 0M0 11 11 0M4 11 15 0M8 11 19 0M12 11 23 0M16 11 26 1M20 11 26 5" stroke="rgba(201,160,135,.7)" stroke-width=".8"/></svg>Heaviest rain</li>
+              <li><svg viewBox="0 0 26 11" aria-hidden="true"><path d="M1 8c5-1 9-4 14-5s7 0 10 1" fill="none" stroke="rgba(231,232,228,.55)" stroke-width="1"/></svg>Surface wind</li>
+            </ul>
+          </div>
+          <button class="motion-toggle" type="button" data-flow-toggle aria-pressed="false">
+            <svg class="i-pause" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><rect x="1.5" y="1" width="2.4" height="8"/><rect x="6.1" y="1" width="2.4" height="8"/></svg>
+            <svg class="i-play" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg>
+            <span class="label">Pause motion</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="about-title">
+      <div class="wrap row">
+        <div>
+          <span class="kicker">About the lab</span>
+          <h2 id="about-title" class="row-head">Why extremes</h2>
+        </div>
+        <div>
+          <p class="statement">We want to understand the <em>physical mechanisms</em> behind <span class="hl">weather and climate extremes</span>, how they respond to a changing climate, and how predictable they are.</p>
+          <div class="cols-2">
+            <p>Our research covers weather and climate dynamics and the hydrological cycle, with an emphasis on extreme precipitation, hurricanes, and other extremes in coastal regions and beyond.</p>
+            <p>We look at how the atmospheric general circulation, ocean conditions, and external forcing shape these events and their variability on regional and global scales, using observations and climate model simulations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="research-title">
+      <div class="wrap">
+        <div class="row">
+          <div>
+            <span class="kicker">Research</span>
+            <h2 id="research-title" class="row-head">Four lines of work</h2>
+          </div>
+          <p class="intro">Each theme asks a different question about extreme weather, from what sets the heaviest rainfall to how predictable its future is.</p>
+        </div>
+        <div class="themes">
+          <a class="theme" href="research.html#precip">
+            <svg class="theme-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M10 12v14M18 12v22M26 12v10M34 12v28M42 12v18"/><path class="accent" d="M50 12v42" stroke-width="2"/><path d="M6 58h52" opacity=".4"/></svg>
+            <h3>Extreme precipitation</h3>
+            <p>What sets the intensity and frequency of heavy rainfall, and how its moisture supply and dynamics change as the climate warms.</p>
+            <span class="more">More<svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
+          </a>
+          <a class="theme" href="research.html#coastal">
+            <svg class="theme-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M18 8l-4 12M28 8l-4 12M38 8l-4 12" opacity=".6"/><path class="accent" d="M50 6l-6 18" stroke-width="2"/><path d="M6 34h38m-5-4 5 4-5 4"/><path d="M6 50c4-3 8-3 12 0s8 3 12 0 8-3 12 0 8 3 12 0 4-1.5 4-1.5" opacity=".5"/></svg>
+            <h3>Coastal weather extremes</h3>
+            <p>Heavy rain, hurricanes, and other high-impact weather along the Gulf Coast, and the coastal processes, such as low-level jets, that feed them.</p>
+            <span class="more">More<svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
+          </a>
+          <a class="theme" href="research.html#circulation">
+            <svg class="theme-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M4 30c8-14 16-14 24 0s16 14 24 0c3-5 6-8 8-9" stroke-width="2"/><path d="M4 18c8-10 16-10 24 0s16 10 24 0" opacity=".45"/><path class="accent" d="M4 50c4-3 8-3 12 0s8 3 12 0 8-3 12 0 8 3 12 0 6-2 8-2"/></svg>
+            <h3>Circulation, oceans, and forcing</h3>
+            <p>How the general circulation, ocean conditions, and external forcing organize extremes on regional and global scales.</p>
+            <span class="more">More<svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
+          </a>
+          <a class="theme" href="research.html#predictability">
+            <svg class="theme-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M6 44c10 0 14-2 20-8s14-16 32-20" opacity=".35"/><path d="M6 44c10 0 14-1 20-6s14-10 32-10" opacity=".35"/><path d="M6 44c10 0 14 0 20-3s14-4 32-2" opacity=".35"/><path class="accent" d="M6 44c10 0 14-1 20-5s14-8 32-11" stroke-width="2"/></svg>
+            <h3>Change and predictability</h3>
+            <p>Separating forced signals from internal variability to explain observed trends, project future change, and judge predictability.</p>
+            <span class="more">More<svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" aria-labelledby="methods-title">
+      <div class="wrap">
+        <div class="row">
+          <div>
+            <span class="kicker">How we work</span>
+            <h2 id="methods-title" class="row-head">From records to <em>mechanisms</em></h2>
+          </div>
+          <p class="intro">Observations show what has changed. Model experiments and moisture budgets explain why, and together they tell us what to expect.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><h3>Observations</h3><p>Observational records of heavy rainfall, storms, and the large-scale circulation show how extremes have changed.</p></div>
+          <div class="step"><h3>Model experiments</h3><p>Climate model simulations and targeted experiments isolate the roles of individual forcings and processes.</p></div>
+          <div class="step"><h3>Moisture budgets</h3><p>Moisture budget analysis separates the thermodynamic and dynamic processes behind extreme precipitation.</p></div>
+          <div class="step"><h3>Change and predictability</h3><p>We assess how high-impact events respond to climate change and how predictable they are.</p></div>
+        </div>
+        <div class="scale-note"><span>Regional scales</span><span class="line" aria-hidden="true"></span><span>Global scales</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pubs-title">
+      <div class="wrap row">
+        <div>
+          <span class="kicker">Publications</span>
+          <h2 id="pubs-title" class="row-head">Recent papers</h2>
+          <p class="more"><a href="publications.html">All publications</a></p>
+        </div>
+        <div class="pub-list" data-pubs="latest" data-limit="3"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="news-title">
+      <div class="wrap row">
+        <div>
+          <span class="kicker">News</span>
+          <h2 id="news-title" class="row-head">Lab notes</h2>
+        </div>
+        <div class="news-list" data-news data-limit="4"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-name">Coastal Weather and Climate Extremes Lab</p>
+        <p>Department of Oceanography &amp; Coastal Sciences<br>College of the Coast &amp; Environment<br>Louisiana State University</p>
+      </div>
+      <div>
+        <h2 class="footer-head">Visit</h2>
+        <address>2103 Energy, Coast &amp; Environment Bldg.<br>Louisiana State University<br>Baton Rouge, LA 70803</address>
+      </div>
+      <div>
+        <h2 class="footer-head">Contact</h2>
+        <ul>
+          <li><a href="mailto:wengui.liang@lsu.edu">wengui.liang@lsu.edu</a></li>
+          <li><a href="https://scholar.google.com/citations?user=57zJp6UAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.lsu.edu/cce/" target="_blank" rel="noopener">College of the Coast &amp; Environment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span data-current-year>2026</span> Coastal Weather and Climate Extremes Lab, Louisiana State University</p>
+    </div>
+  </footer>
+
+  <script src="data/publications.js?v=20261027j" defer></script>
+  <script src="data/news.js?v=20261027j" defer></script>
+  <script src="assets/js/wxmap.js?v=20261027j" defer></script>
+  <script src="assets/js/main.js?v=20261027j" defer></script>
+</body>
+</html>
