@@ -619,8 +619,8 @@ a:hover { color: var(--link); text-decoration-color: currentColor; }
 
 /* Conference presentations and theses, below the papers */
 .list-head { margin-bottom: clamp(28px, 4vw, 44px); }
-.pub-group h3 { position: sticky; top: 20px; align-self: start; font-size: clamp(24px, 2.2vw, 30px); line-height: 1.15; letter-spacing: -0.01em; }
-.pub-group h3 span { display: block; margin-top: 10px; font: 400 13px var(--sans); letter-spacing: 0; color: var(--ink-3); }
+.pub-group > h3 { position: sticky; top: 20px; align-self: start; font-size: clamp(24px, 2.2vw, 30px); line-height: 1.15; letter-spacing: -0.01em; }
+.pub-group > h3 span { display: block; margin-top: 10px; font: 400 13px var(--sans); letter-spacing: 0; color: var(--ink-3); }
 .pub-group .pub-title { font-size: 19px; }
 
 /* ---------- Contact page ---------- */
@@ -676,7 +676,7 @@ a:hover { color: var(--link); text-decoration-color: currentColor; }
 @media (max-width: 900px) {
   .row, .r-grid, .pi, .contact, .year-group, .pub-group { grid-template-columns: minmax(0, 1fr); }
   .r-block.flip .r-figure { order: 0; }
-  .r-figure, .year-group h2, .pub-group h3 { position: static; }
+  .r-figure, .year-group h2, .pub-group > h3 { position: static; }
   .projects, .facts { grid-template-columns: minmax(0, 1fr); }
   .cols-2 { columns: 1; }
   .steps { grid-template-columns: minmax(0, 1fr); gap: 34px; padding-left: 28px; margin-top: 40px; }
