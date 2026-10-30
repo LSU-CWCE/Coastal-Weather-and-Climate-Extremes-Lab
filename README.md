@@ -1,5 +1,8 @@
 # Coastal Weather and Climate Extremes Lab — 网站
 
+线上网址：https://lsu-cwce.github.io/Coastal-Weather-and-Climate-Extremes-Lab/  
+代码仓库：https://github.com/LSU-CWCE/Coastal-Weather-and-Climate-Extremes-Lab （推送到 `main` 分支后约 1 分钟自动更新）
+
 纯静态网站（HTML + CSS + 原生 JS），不需要数据库，也不需要构建步骤，可以直接部署到 GitHub Pages 或学校服务器。
 
 ## 目录结构
@@ -78,7 +81,7 @@ git push -u origin main
 
 ### 上线后
 
-- 把每个页面 `og:image` 那一行改成完整网址（如 `https://<账号名>.github.io/coastal-extremes-lab/assets/img/share.png`），链接分享到微信、Slack、邮件时才会显示预览图。
+- 每个页面的 `og:image`、`og:url` 已经写成线上的完整网址；以后如果换了网址（比如改仓库名或绑定自己的域名），记得同步改这两行，否则分享链接时不显示预览图。
 - 想用短一点的网址：仓库名改成 `<账号名>.github.io`，网站就是 `https://<账号名>.github.io/`。
 - 想用自己的域名（如 `coastalextremeslab.org`，每年约 10–15 美元）：在 Settings → Pages 填 Custom domain，再到域名服务商加一条 CNAME 记录。
 - 想用 lsu.edu 下的网址：需要问学院 IT 是否能托管静态网页，这个文件夹可以原样交给他们。
