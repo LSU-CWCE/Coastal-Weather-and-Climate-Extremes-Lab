@@ -703,7 +703,8 @@ a:hover { color: var(--link); text-decoration-color: currentColor; }
     background: linear-gradient(180deg, rgba(11, 17, 23, 0.82) 0, rgba(11, 17, 23, 0.6) 96px, rgba(11, 17, 23, 0) 160px, rgba(11, 17, 23, 0) 350px, rgba(11, 17, 23, 0.9) 450px, rgba(11, 17, 23, 0.96) 100%);
   }
   .hero-inner { justify-content: flex-start; padding-top: calc(var(--header-h) + 290px); padding-bottom: 36px; }
-  .hero-legend { display: grid; grid-template-columns: repeat(2, max-content); gap: 6px 18px; }
+  .hero-legend { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .hero-legend li { white-space: normal; }
   .hero h1 { font-size: clamp(46px, 13vw, 60px); }
   .cta-row .btn { flex: 1 1 100%; justify-content: center; }
   .hero-meta .wrap { grid-template-columns: minmax(0, 1fr) auto; gap: 14px 20px; }
