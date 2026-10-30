@@ -75,7 +75,7 @@ window.LAB_PUBLICATIONS = [
     authors: "Liang, W., & Zhang, M.",
     title: "Summer and winter precipitation in East Asia scale with global warming at different rates",
     journal: "Communications Earth & Environment",
-    volume: "2", issue: "1", article: "1–8",
+    volume: "2", issue: "1", article: "150",
     doi: "10.1038/s43247-021-00219-2",
     themes: ["precip"]
   },
@@ -85,8 +85,85 @@ window.LAB_PUBLICATIONS = [
     title: "An overview of Paleo-AO/NAO studies",
     journal: "Advances in Earth Science",
     volume: "31", issue: "11", article: "1137–1150",
+    doi: "10.11867/j.issn.1001-8166.2016.11.1137",
     note: "In Chinese",
     themes: ["circulation"]
+  }
+];
+
+/* ==========================================================================
+   Conference presentations and theses
+   Listed below the papers on the Publications page only, newest first.
+
+   Fields:
+     year     (required) number
+     authors  (required) as you want it printed
+     title    (required)
+     meeting  (required) e.g. "AGU Fall Meeting 2025"; for a thesis, the degree
+              and university, e.g. "Ph.D. dissertation, Stony Brook University"
+     number   optional — abstract number, e.g. "A11A-08"
+     doi      optional — a DOI link is generated
+     url      optional — link to the abstract, used if there is no DOI
+     type     optional — "thesis" lists it under Theses; anything else is a presentation
+   ========================================================================== */
+window.LAB_PRESENTATIONS = [
+  {
+    year: 2025,
+    authors: "Liang, W., Zhao, M., Tan, Z., Knutson, T., Dong, W., & Zhang, B.",
+    title: "Investigating historical precipitation trends in models and observations: Forced signals and atmospheric internal variability",
+    meeting: "AGU Fall Meeting 2025",
+    number: "A11A-08"
+  },
+  {
+    year: 2025,
+    authors: "Coomans, A., Gentile, E. S., Liang, W., & Zhao, M.",
+    title: "A study of extratropical cyclones statistics in present-day and warmer climates",
+    meeting: "105th AMS Annual Meeting",
+    url: "https://ams.confex.com/ams/105ANNUAL/meetingapp.cgi/Paper/448662"
+  },
+  {
+    year: 2024,
+    authors: "Liang, W., Zhao, M., Tan, Z., Knutson, T., Dong, W., & Zhang, B.",
+    title: "The direct radiative effect of CO2 increase on North American precipitation",
+    meeting: "AGU Fall Meeting 2024",
+    number: "A32C-08"
+  },
+  {
+    year: 2024,
+    authors: "Liang, W., & Zhao, M.",
+    title: "Future precipitation changes in North America in a warmer climate",
+    meeting: "EGU General Assembly 2024",
+    number: "EGU24-6720",
+    doi: "10.5194/egusphere-egu24-6720"
+  },
+  {
+    year: 2023,
+    authors: "Liang, W., Zhao, M., & Zhang, M.",
+    title: "Future changes in extreme precipitation in North America under a warmer climate",
+    meeting: "AGU Fall Meeting 2023",
+    number: "A14D-02"
+  },
+  {
+    year: 2023,
+    type: "thesis",
+    authors: "Liang, W.",
+    title: "Regional mechanisms of future hydroclimate changes in a warmer climate",
+    meeting: "Ph.D. dissertation, Stony Brook University",
+    url: "https://www.proquest.com/openview/bd1defb54511672428d0aa78a1eb4c6d/1?cbl=18750&diss=y"
+  },
+  {
+    year: 2020,
+    authors: "Wen, X., & Liang, W.",
+    title: "Evolution of Arctic Oscillation in the past 21,000 years: A modeling study",
+    meeting: "100th AMS Annual Meeting",
+    url: "https://ams.confex.com/ams/2020Annual/meetingapp.cgi/Paper/365848"
+  },
+  {
+    year: 2019,
+    authors: "Liang, W., & Zhang, M.",
+    title: "Interpreting the diurnal cycle of precipitation in the Southern Great Plains using North American Regional Reanalysis",
+    meeting: "AGU Fall Meeting 2019",
+    number: "A41I-2767"
   }
 ];
 

@@ -146,6 +146,31 @@
     renderAll();
   }
 
+  /* ---------- Conference presentations and theses ---------- */
+
+  var presRoot = $('[data-presentations]');
+  if (presRoot) {
+    var PRES = (window.LAB_PRESENTATIONS || []).slice().sort(function (a, b) { return b.year - a.year; });
+    // Shown with the paper layout: a meeting reads like a journal, a thesis like a note.
+    var asPub = function (p) {
+      var thesis = p.type === 'thesis';
+      return { year: p.year, authors: p.authors, title: p.title, journal: thesis ? '' : p.meeting,
+        note: thesis ? p.meeting : '', article: p.number, doi: p.doi, url: p.url };
+    };
+    var presGroups = [
+      { label: 'Conference presentations', one: 'abstract', many: 'abstracts', items: PRES.filter(function (p) { return p.type !== 'thesis'; }) },
+      { label: 'Theses', one: 'thesis', many: 'theses', items: PRES.filter(function (p) { return p.type === 'thesis'; }) }
+    ].filter(function (g) { return g.items.length; });
+    if (!presGroups.length) {
+      presRoot.closest('section').hidden = true;
+    } else {
+      presRoot.innerHTML = presGroups.map(function (g) {
+        return '<section class="pub-group"><h3>' + g.label + '<span>' + g.items.length + ' ' + (g.items.length > 1 ? g.many : g.one) + '</span></h3><div>' +
+          g.items.map(function (p) { return pubHTML(asPub(p), true); }).join('') + '</div></section>';
+      }).join('');
+    }
+  }
+
   /* ---------- News ---------- */
 
   function formatDate(d) {

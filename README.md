@@ -19,6 +19,7 @@ The repository is public, so everything in it can be seen by anyone. Don't add a
 | To do this | Edit this |
 |---|---|
 | Add a paper | `data/publications.js`. Copy one `{ ... }` block and change it. Adding a `doi` creates the link; `themes` lists it under research themes on the Research page. For a manuscript in preparation, use `status: "in-prep"` instead of `year`. |
+| Add a conference presentation or thesis | `data/publications.js`, in the second list (`LAB_PRESENTATIONS`). Copy one block and change it; add `type: "thesis"` for a thesis. |
 | Add or update a group member | `data/people.js`. Copy an existing entry and change it. Fields you leave out are simply not shown. |
 | Add a member photo | Upload it to `assets/img/people/` (portrait, about 3:4, roughly 700 px wide), then add `photo: "assets/img/people/your-name.jpg"` to the member's entry. |
 | Post news | `data/news.js`, newest item first. |
